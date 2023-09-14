@@ -1,0 +1,5 @@
+1.Write a program that converts Celsius to Fahrenheit, ask a user for the Celsius value.
+2.Write a program that calculates the area of a circle given its radius, ask a user for the radius.
+3.Write a program that converts kilometers per hour to meters per second, ask a user for the speed.
+4.Write a program that converts some amount of money from USD to BYN, ask a user for the amount, store the ratio inside the program itself.
+5.Write a program that generates a random number in a given range, and shows the answer to a user, ask a user for the left and right border.
