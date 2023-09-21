@@ -1,0 +1,9 @@
+Implement a text output of the time entered from the console (the user should input data in the format hh:mm).
+
+Show the responses to the user in Russian according to the rules listed below:
+
+min == 0: такое-то значение часа ровно (15:00 - три часа ровно)
+min < 30: столько-то минут следующего часа (19:12 - двенадцать минут восьмого)
+min == 30: половина такого-то (15:30 - половина четвёртого)
+min > 30 and min < 45 столько-то минут следующего часа (12:38 - тридцать восемь минут первого)
+min >= 45 без min такого-то (08:54 - без шести минут девять)
