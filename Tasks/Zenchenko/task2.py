@@ -78,7 +78,8 @@ elif int(time1[1])==00:
 elif int(time1[1])>44 and int(time1[1])<60:
     mn=60-(int(time1[1]))
     minute1=mn
-    hour2=hour2+1
+    hour1= hour1
+    hour2=hour2
 
 
 if int(time1[0]) == 1 or int(time1[0]) == 13:
@@ -112,8 +113,10 @@ elif int(time1[1])>0 and int(time1[1])<30 or int(time1[1])>30 and int(time1[1])<
     print("Текущее время {} {} {} {} ".format(minute[minute1],minute[minute2],minutemark,hrmark))
 elif int(time1[1])==30:
     print("Текущее время пол {} ".format(hrmark))
-elif int(time1[1])>44 and int(time1[1])<60:
-    print("Текущее время без {} {} {} {}".format(mn4560[minute1], minutemark, hour[hour1], hour[hour2]))
+elif int(time1[1])>44 and int(time1[1])<60 and int(time1[0])>0 and int(time1[0])<21:
+    print("Текущее время без {} {} {} {}".format(mn4560[minute1], minutemark, hour[hour1+1], hour[hour2]))
+elif int(time1[1])>44 and int(time1[1])<60 and int(time1[0])>20 and int(time1[0])<25:
+    print("Текущее время без {} {} {} {}".format(mn4560[minute1], minutemark, hour[hour1], hour[hour2+1]))
 
 
 #print ("Текущее время {} {} {} {} {} ".format(hour[hour1],hour[hour2],hourmark,minute[minute1],minute[minute2]))
