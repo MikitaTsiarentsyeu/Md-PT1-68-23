@@ -6,10 +6,10 @@ if time.count(":") == 1 and len(time) == 5:
     hour, min = int(time[0]), int(time[1])
     if hour > 23 or min > 59:
         print("Incorrect input, please try again!")
-        exit()
+        input("Press enter to the end programm")
 else:
     print("Incorrect input, please try again!")
-    exit()
+    input("Press enter to the end programm")
 
 
 dicthour = {
@@ -78,3 +78,5 @@ else:
             print(f"Без {dicthour[60 - min][2]} минут час")
         else:
             print(f"Без {dicthour[60 - min][2]} минут {dicthour[hour+1][0]}")
+
+input("Press enter to the end programm")
