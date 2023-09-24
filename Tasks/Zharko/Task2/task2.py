@@ -7,9 +7,11 @@ if time.count(":") == 1 and len(time) == 5:
     if hour > 23 or min > 59:
         print("Incorrect input, please try again!")
         input("Press enter to the end programm")
+        exit()
 else:
     print("Incorrect input, please try again!")
     input("Press enter to the end programm")
+    exit()
 
 
 dicthour = {
