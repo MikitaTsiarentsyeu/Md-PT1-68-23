@@ -1,7 +1,15 @@
 t = str(input("Please enter the time in the format hh:mm: "))
+if len(t) > 5:
+    print('Incorrect date format. Try again!')
+    exit()
+
 t = t.split(':')
 hh = t[0]
 min = t[1]
+
+if hh > '25' or min > '60':
+    print('Incorrect date format. Try again!')
+    exit()
 
 d_hh = {
     '00' : 'первого',
