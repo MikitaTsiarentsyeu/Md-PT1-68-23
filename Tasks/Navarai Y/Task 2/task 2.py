@@ -125,8 +125,10 @@ if 22 <= min < 25 or 32 <= min < 35 or 42 <= min < 45:
     print(mm[min - min % 10] + " " + mm[min % 10] + " " + "минуты" + " " + m30[hh])
 if 25 <= min < 30 or 35 <= min < 40:
     print(mm[min - min % 10] + " " + mm[min % 10] + " " + "минут" + " " + m30[hh])
-if 45 <= min <= 59:
+if 45 <= min <= 59 and hh < 23:
     print("без" + " " + dm[min] + " " + "минут" + " " + m0[hh+1])
+if 45 <= min <= 59 and hh == 23:
+    print("без" + " " + dm[min] + " " + "минут" + " " + m0[12])
 
 
 
