@@ -1,14 +1,21 @@
-user_input = input("Please enter a list of numbers, e.g. 1.0, 2, 3, etc.:\n")
-user_input = user_input.replace(" ", "").split(",")
+while True:
+    user_input = input("Please enter a list of numbers:\n")
+    user_input = user_input.replace(" ", ",").replace(",,", ",").split(",")
 
-new_input = []
+    try:
+        new_input = []
+        for k in range(len(user_input)):
+            new_input.append(float(user_input[k]))
+            
+    except:
+        print("The values should digits")
+        continue
 
-for k in user_input:
-    new_input.append(float(k))
+    break
 
 m = 0
 for i in new_input:
     m += i
 
 mean_value = m / len(new_input)
-print(mean_value)
+print(f"The mean value is {mean_value}")

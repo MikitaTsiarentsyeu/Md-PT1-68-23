@@ -1,12 +1,16 @@
-user_input = input("Please enter a list of strings sseparated by commas:\n")
-user_input = user_input.replace(" ", "").split(",")
+user_input = input("Please enter a list of strings:\n")
+user_input = user_input.replace(" ", ",").replace(",,", ",").split(",")
 
-# user_input = ["polsa", "klsjds", "ds", "posdkifos", "qouiwy", "asds", "wieruusa", "sdf", "qwdasasdasdasd", "", "v"]
+# user_input = ["polsa", "klsjds", "ds", "posdkifos", "qouiwy", "asds", "wieruusa", "832dfgg", "qwdasasdasdasd", "", "v"]
 
-list_str = []
+def char_counter(x): 
 
-for i in user_input:
-    if len(i) > 5:
-        list_str.append(i)
+    list_str = []
+
+    for i in x:
+        if len(i) > 5:
+            list_str.append(i)
     
-print(list_str)
+    print(f"A list with all strings containing more than 5 characters {list_str}")
+
+char_counter(user_input)
