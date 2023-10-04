@@ -22,3 +22,4 @@ def converter_to_BYN(x):
 
 converter_to_BYN(amount_USD)
 
+
