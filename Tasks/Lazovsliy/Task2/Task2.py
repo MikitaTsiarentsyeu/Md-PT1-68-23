@@ -1,3 +1,4 @@
+
 # Prompt the user for input in the specified format
 user_input = input("Введите время в формате hh:mm ")
 
