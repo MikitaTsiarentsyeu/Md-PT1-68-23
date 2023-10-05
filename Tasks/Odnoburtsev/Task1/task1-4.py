@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 html = urlopen("https://kurs.onliner.by/")
 soup = BeautifulSoup(html, features="html.parser")
-USD_BYN = f"{soup.find_all('p', {'class':('value fall', 'value rise')})[2].text}"
+USD_BYN = f"{soup.find_all('p', {'class':('value','value fall', 'value rise')})[2].text}"
 USD_BYN = USD_BYN.replace(",", ".")[0:6]
 
 amount_USD = decimal.Decimal(input("Please enter the amount of USD to convert: "))
@@ -21,4 +21,5 @@ def converter_to_BYN(x):
         print("The amount in BYN is", y)
 
 converter_to_BYN(amount_USD)
+
 
