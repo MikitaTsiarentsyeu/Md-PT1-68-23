@@ -39,7 +39,7 @@ def time_to_words(time_str):
             if mm == 30:
                 return f"(половина {numbers[hh]})"
             if mm <= 20:
-                return f"(без {numbers[mm]} минут {numbers[hh + 1]})"
+                return f"(без {numbers[mm]} минут {numbers[hh]})"
             else:
                 return f"(без {numbers[20]} {numbers[mm - 20]} минут {numbers[hh + 1]})"
         
