@@ -29,7 +29,7 @@ with open("text.txt") as f:
     
     # os.chdir(old_dir)
 
-    with open("new formatted text", "w") as new:
+    with open("new formatted text.txt", "w") as new:
         lines = f.read(chunk_size+1)
         
         # Search for lines with '\n' symbol, define its index in a line and 
@@ -86,7 +86,7 @@ with open("text.txt") as f:
                 break
 
 print(f"Your file with {chunk_size} characters per line is ready. \
-Please open the file 'formatted text.txt'!")
+Please open the file 'new formatted text.txt'!")
 
 # end_time = time.time()
 # print(end_time)

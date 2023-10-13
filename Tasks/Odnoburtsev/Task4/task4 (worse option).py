@@ -28,7 +28,7 @@ while True:
 # its content applying lines whose length depends on the number entered. 
 with open("text.txt") as f:
     # os.chdir(old_dir)
-    with open("formatted text", "w") as new:
+    with open("formatted text.txt", "w") as new:
         lines = f.read(chunk_size+1)
         
         # Search for lines with '\n' symbol, define its index in a line and 
