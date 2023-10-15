@@ -1,9 +1,12 @@
 import random
-old_list = list(set(random.choices(range(0, 20), k = 20)))
-print(old_list)
+# old_list = list(set(random.choices(range(0, 20), k = 20)))
+old_list = random.sample(range(0, 20), 12)
+old_list.sort()
+
 # old_list = [1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 14, 17]
 
 def range_finder(x: list):
+    print(x)
     counter = 0
     new_list = []
 
