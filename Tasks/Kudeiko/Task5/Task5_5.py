@@ -24,17 +24,17 @@ def get_ranges(lst):
         else:
             last = lst[indx]
             indx += 1
+    return to_str(lst_new)
 
-    def to_str():
-        l = []
-        for first, last in lst_new:
-            if first != last:
-                l.append(f'{first}-{last}')
-            else:
-                l.append(f'{first}')
-        return ', '.join(l)
 
-    return to_str()
+def to_str(lst_new):
+    l = []
+    for first, last in lst_new:
+        if first != last:
+            l.append(f'{first}-{last}')
+        else:
+            l.append(f'{first}')
+    return ', '.join(l)
 
 
 print(get_ranges([0, 1, 2, 3, 4, 7, 8, 10]))
