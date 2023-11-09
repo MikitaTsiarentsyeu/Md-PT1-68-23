@@ -1,0 +1,5 @@
+Function: example_function
+Arguments: (2, 3), {}
+Return Value: 5
+Execution Time: 0.00 seconds
+
