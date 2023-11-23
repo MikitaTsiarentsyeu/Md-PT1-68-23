@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for p in posts %}
+        <a href="{% url 'post' p.id %}">
+            <h2>{{p.title}}</h2>
+        </a>
+        <h3>by {{p.author.name}}</h3>
+        <img width="90%" src="{{p.image.url}}"/>
+    {% endfor %}
+{% endblock %}

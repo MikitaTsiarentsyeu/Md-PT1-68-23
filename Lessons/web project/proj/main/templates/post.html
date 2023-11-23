@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{{p.title}}</h2>
+    <h3>by {{p.author.name}}</h3>
+    <img width="90%" src="{{p.image.url}}"/>
+    <p>{{p.content}}</p>
+{% endblock %}

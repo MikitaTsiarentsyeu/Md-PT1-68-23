@@ -15,3 +15,4 @@ class Post(models.Model):
     image = models.ImageField(upload_to='uploads')
 
     author = models.ForeignKey('Author', on_delete=models.CASCADE)
+
