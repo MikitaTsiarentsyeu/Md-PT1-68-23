@@ -1,7 +1,7 @@
 raw_string = "manona"
 
 def reverse_string(x: str):
-    if len(x) == 0:
+    if not len(x):
         return
      
     first_char = x[0]
