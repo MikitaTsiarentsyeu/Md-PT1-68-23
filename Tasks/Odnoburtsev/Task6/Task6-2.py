@@ -1,7 +1,7 @@
-test_string = "tenet"
+test_string = "ten1net"
 
 def check_palindrome(x: str):
-    if len(x) == 0:
+    if not len(x):
         print(f"A string {repr(test_string)} is a palindrome")
         return
      
