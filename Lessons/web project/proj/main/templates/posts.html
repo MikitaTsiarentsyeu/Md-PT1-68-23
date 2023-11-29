@@ -5,7 +5,11 @@
         <a href="{% url 'post' p.id %}">
             <h2>{{p.title}}</h2>
         </a>
-        <h3>by {{p.author.name}}</h3>
+        <h3>by {{p.author.name}}
+            {% if p.id in viewed_posts %}
+                | viewed
+            {% endif %}
+        </h3>
         <img width="90%" src="{{p.image.url}}"/>
     {% endfor %}
 {% endblock %}
