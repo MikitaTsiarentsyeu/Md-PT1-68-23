@@ -1,0 +1,1 @@
+the execution time is 0.0; arguments are (10, 15, 20); value of a function is 45.
