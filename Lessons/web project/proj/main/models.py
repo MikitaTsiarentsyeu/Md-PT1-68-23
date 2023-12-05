@@ -5,6 +5,10 @@ class Author(models.Model):
     name = models.CharField(blank=False, max_length=100)
     email = models.EmailField(blank=False, primary_key=True)
 
+    def __str__(self) -> str:
+        return self.email
+
+
 class Post(models.Model):
 
     POST_TYPES = [('c', 'copyright'), ('p', 'public content')]
@@ -16,3 +20,5 @@ class Post(models.Model):
 
     author = models.ForeignKey('Author', on_delete=models.CASCADE)
 
+    def __str__(self) -> str:
+        return f"{self.title} ({self.id})"
